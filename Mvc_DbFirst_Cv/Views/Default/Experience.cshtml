@@ -1,0 +1,21 @@
+﻿@using Mvc_DbFirst_Cv.Models.Entity;
+@model List<TblExperience>
+
+
+<section class="resume-section" id="experience">
+    <div class="resume-section-content">
+        @foreach (var item in Model)
+        {
+            <h2 class="mb-5">Experience</h2>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">@item.Title</h3>
+                    <div class="subheading mb-3">@item.SubTitle</div>
+                    <p>@item.Desription</p>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">@item.Date</span></div>
+            </div>
+        }
+
+        </div>
+</section>

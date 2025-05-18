@@ -1,0 +1,21 @@
+﻿@using Mvc_DbFirst_Cv.Models.Entity
+@model List<TblSkill>
+
+
+   
+    <div class="resume-section-content">
+        <h2 class="mb-5">Skills</h2>
+        <div class="subheading mb-3">Workflow</div>
+        <ul class="fa-ul mb-0">
+            @foreach (var item in Model)
+            {
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+               @item.Skills
+            </li>
+            }
+
+        </ul>
+    </div>
+    
+
